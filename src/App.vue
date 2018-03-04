@@ -18,6 +18,13 @@ export default {
 
 <style>
   @import 'style/init.css';
+  #app {
+    background: #f1f1f1;
+  }
+  #app .mint-header {
+    height: 45px;
+    background: #006eb8;
+  }
   .footer {
     display: flex;
     justify-content: space-around;

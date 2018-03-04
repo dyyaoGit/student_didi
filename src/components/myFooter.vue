@@ -1,6 +1,6 @@
 <template>
     <div class="myFooter">
-      <router-link to="/" :class="{active: $route.name === 'index'}">
+      <router-link to="/" :class="{active: $route.name === 'apply'}">
         <div>
           <i class="iconfont icon-home"></i>
         </div>
@@ -73,3 +73,6 @@
   }
 
 </style>
+
+
+

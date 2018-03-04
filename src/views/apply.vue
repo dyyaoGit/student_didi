@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="apply">
     <mt-header title="报名流程">
       <router-link to="/" slot="left">
         <mt-button icon="back"></mt-button>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'apply',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -26,10 +26,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style>
-  .hello .mint-header {
-    height: 45px;
-    background: #006eb8;
-  }
+
 </style>
 <style scoped>
 .img-wrap img{
