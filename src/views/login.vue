@@ -11,10 +11,9 @@
     </div>
 
     <div class="login-box">
-      <didi-input label="账号名：" v-model="userName" style="border-radius: 5px 5px 0 0 "></didi-input>
-      <didi-input label="密码：" type="password" v-model="pwd"
-                  style="border-top: none;border-radius: 0 0 5px 5px">
-      </didi-input>
+      <didiInput label="用户名：" v-model="userName"></didiInput>
+      <didiInput label="密码："></didiInput>
+      <!--<input type="text" v-model="userName">-->
     </div>
 
     <div class="btn-wrap">
@@ -39,7 +38,7 @@
     },
     data() {
       return {
-        userName: '',
+        userName: 'hello world',
         pwd: ''
       }
     }

@@ -1,8 +1,8 @@
 <template>
   <label class="input-wrap">
-    <span class="label-font">
-      {{label}}
-    </span>
+      <span>
+        {{label}}
+      </span>
     <input :type="type" class="didi-input" v-model="currentValue">
   </label>
 </template>
@@ -11,29 +11,29 @@
   export default {
     name: "didi-input",
     props: {
-      value: {
-        type: String,
-        require: true
-      },
       label: {
-        type: String,
-        default: 'text'
+        type: String
       },
       type: {
+        type: String,
+        default: "text"
+      },
+      value: {
         type: String
       }
     },
-    data () {
+    data() {
       return {
-          currentValue: this.value
+        currentValue: this.value
       }
     },
     watch: {
       value(val) {
+        console.log(val)
         this.currentValue = val;
       },
       currentValue(val) {
-        this.$emit('input',val)
+        this.$emit("input",val)
       }
     }
   }
