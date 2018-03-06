@@ -5,6 +5,11 @@ import App from './App'
 import router from './router'
 import 'mint-ui/lib/style.css'
 import MintUI from 'mint-ui'
+import myPlugin from './components/myPlugin'
+import myAxios from './util/myAxios'
+
+
+Vue.use(myPlugin)
 
 Vue.use(MintUI)
 Vue.config.productionTip = false

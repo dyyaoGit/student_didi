@@ -13,6 +13,7 @@
     <div class="login-box">
       <didiInput label="用户名：" v-model="userName"></didiInput>
       <didiInput label="密码："></didiInput>
+      <mt-field label="用户名" placeholder="请输入用户名" v-model="userName"></mt-field>
       <!--<input type="text" v-model="userName">-->
     </div>
 
@@ -30,12 +31,8 @@
 </template>
 
 <script>
-  import didiInput from '@/components/didi-input'
   export default {
     name: "login",
-    components: {
-      didiInput
-    },
     data() {
       return {
         userName: 'hello world',

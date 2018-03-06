@@ -20,6 +20,15 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: () => import('@/views/login')
+    },
+    {
+      path: '/news',
+      component: () => import('@/views/news')
+    },
+    {
+      path: '/newsItem',
+      component: () => import('@/views/newsItem')
+
     }
 
   ]

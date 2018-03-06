@@ -35,6 +35,8 @@
       currentValue(val) {
         this.$emit("input",val)
       }
+    },
+    mounted() {
     }
   }
 </script>

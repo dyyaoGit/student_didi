@@ -5,6 +5,7 @@
     <button @click="test">
       按钮
     </button>
+    <didi-input></didi-input>
   </div>
 </template>
 
@@ -14,15 +15,14 @@
     name: "mydidi",
     methods: {
       test() {
-        console.log(this.$route.name)
+        this.$router.push("/news?id=15")
       },
       isLogin() {
-        let that = this;
         axios.get('http://didi.yaojunrong.com/api/user/isLogin')
-          .then(function (res) {
+          .then((res) => {
             if(!res.data.ret){
               setTimeout(function() {
-                that.$router.push('/login')
+                this.$router.push('/login')
 
               },3000)
             }
@@ -33,7 +33,7 @@
       }
     },
     mounted() {
-      this.isLogin();
+      // this.isLogin();
     }
   }
 </script>
